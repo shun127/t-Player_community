@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TweetApp</title>
+    <title>t.PlayerCommunity</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
@@ -14,9 +14,9 @@
     <header>
       <div class="header-logo">
         <% if @current_user %>
-          <%= link_to("TweetApp", "/posts/index") %>
+          <%= link_to("t.PlayerCommunity", "/posts/index") %>
         <% else %>
-          <%= link_to("TweetApp", "/") %>
+          <%= link_to("t.PlayerCommunity", "/") %>
         <% end %>
       </div>
       <ul class="header-menus">
@@ -38,7 +38,7 @@
           </li>
         <% else %>
           <li>
-            <%= link_to("TweetAppとは", "/about") %>
+            <%= link_to("t.PlayerCommunity", "/about") %>
           </li>
           <li>
             <%= link_to("新規登録", "/signup") %>
