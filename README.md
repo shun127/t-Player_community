@@ -1,24 +1,47 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## アプリ名
+t-Player_community
 
-Things you may want to cover:
+## アプリのURL
 
-* Ruby version
 
-* System dependencies
+## 開発環境
+.Ruby
+.VSCode(Visual Studio Code)
 
-* Configuration
+## 背景
+私自身がテニスをしているが相手がおらず中々できないことがあります。
+その中で開発したのがt-Player_communityです。
+t-Player_communityはコミュニティサイトで周りにいる人とやり取りを
+行うことができるサービスです。
 
-* Database creation
+# DB設計
 
-* Database initialization
+## usersテーブル
+|Column|Type|Option|
+|mail|string|unique: true|
+|name|string|null: false, index :true|
+|password|string|unique: true|
 
-* How to run the test suite
+## Association
+has_many :posts
+has_many :comments
+has_many :likes
 
-* Services (job queues, cache servers, search engines, etc.)
+## postsテーブル
+|user_id|references|null: false, foreign_key: true|
+|body|text|
 
-* Deployment instructions
+## Association
+belongs_to :user
+has_many   :comments
+has_many   :likes
 
-* ...
+## likesテーブル
+|user_id¥|references|null: false, foreign_key: true|
+|post_id|references|null: false, foreign_key: true|
+
+## Association
+belongs_to :user 
+belongs_to :post
