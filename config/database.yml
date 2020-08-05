@@ -50,5 +50,8 @@ test:
 production:
   <<: *default
   database: t-Player_community_production
-  username: t-Player_community
-  password: <%= ENV['T-PLAYER_COMMUNITY_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
+  # username: t-Player_community
+  # password: <%= ENV['T-PLAYER_COMMUNITY_DATABASE_PASSWORD'] %>
