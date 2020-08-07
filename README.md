@@ -2,7 +2,8 @@
 
 ## アプリ名
 t-Player_community
-https://gyazo.com/384a8224061e7957efb18aeb4153b33a
+![c2abcfb1f5dbd06aa364f1b595d1ddb0](https://user-images.githubusercontent.com/62455185/89609427-c474f900-d8b2-11ea-9c7e-bc69a497c126.jpg)
+
 ## アプリのURL
 http://54.199.15.87/
 
