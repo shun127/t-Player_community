@@ -2,9 +2,13 @@
 
 ## アプリ名
 t-Player_community
-
+https://gyazo.com/384a8224061e7957efb18aeb4153b33a
 ## アプリのURL
+http://54.199.15.87/
 
+## テストアカウント
+アカウント：test1@gmail.com
+パスワード：testtest
 
 ## 開発環境
 .Ruby
